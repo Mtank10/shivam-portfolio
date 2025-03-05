@@ -67,10 +67,10 @@ export default function Navbar() {
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="absolute top-full left-0 w-full bg-inherit md:hidden"
+            className="absolute top-full left-0 w-full bg-inherit md:hidden bg-white/10"
           >
             <div className="flex flex-col items-center py-4 gap-4">
-              {['home', 'projects', 'experience'].map((section) => (
+              {['home', 'projects', 'experience','skills','contact'].map((section) => (
                 <Link
                   key={section}
                   href={`#${section}`}
