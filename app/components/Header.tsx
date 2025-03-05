@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { ArrowDownTrayIcon } from "@heroicons/react/24/outline";
 import { useEffect, useState } from "react";
 
+
 const roles = ["Frontend Developer", "Fullstack Developer", "Backend Developer", "Freelancer"];
 
 export default function Header() {
@@ -48,7 +49,7 @@ export default function Header() {
           </p>
 
           <motion.a
-            href="/ShivamCV.pdf"
+            href="https://drive.google.com/file/d/12UY8eVAOqP1hlnvIMsUZ3laMM_opAF_9/view?usp=sharing"
             download
             whileHover={{ scale: 1.05 }}
             className="inline-flex items-center bg-white/20 px-8 py-4 rounded-lg backdrop-blur-sm hover:bg-white/30"
