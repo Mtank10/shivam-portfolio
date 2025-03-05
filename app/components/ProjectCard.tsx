@@ -6,12 +6,14 @@ export default function ProjectCard({ project }: { project: any }) {
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      whileHover={{ scale: 1.02 }}
-      className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden"
+      className="rounded-xl overflow-hidden shadow-xl"
+      style={{
+        background: 'linear-gradient(145deg, #43cea280, #185a9d80)',
+        color: '#ffffff'
+      }}
     >
       <div className="flex flex-col md:flex-row">
-        <div className="md:w-1/3 relative h-48 md:h-auto">
+        <div className="md:w-1/3 relative h-48">
           <Image
             src={project.image}
             alt={project.title}
@@ -20,26 +22,22 @@ export default function ProjectCard({ project }: { project: any }) {
           />
         </div>
         
-        <div className="p-6 md:w-2/3">
-          <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-3">
-            {project.title}
-          </h3>
-          
-          <div className="flex flex-wrap gap-2 mb-4">
+        <div className="p-8 md:w-2/3">
+          <h3 className="text-2xl font-bold mb-4">{project.title}</h3>
+          <div className="flex flex-wrap gap-2 mb-6">
             {project.tech.map((tech: string, i: number) => (
               <span
                 key={i}
-                className="px-3 py-1 bg-primary/10 dark:bg-secondary/10 text-primary dark:text-secondary rounded-full text-sm"
+                className="px-4 py-1 rounded-full bg-white/10 text-sm"
               >
                 {tech}
               </span>
             ))}
           </div>
-          
-          <ul className="space-y-2 text-gray-600 dark:text-gray-300">
+          <ul className="space-y-3">
             {project.points.map((point: string, i: number) => (
-              <li key={i} className="flex items-center">
-                <span className="w-2 h-2 bg-primary dark:bg-secondary rounded-full mr-2" />
+              <li key={i} className="flex items-start">
+                <span className="w-2 h-2 bg-white rounded-full mt-2 mr-3" />
                 {point}
               </li>
             ))}

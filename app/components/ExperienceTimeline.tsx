@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
-
+import fullstack from '../../public/assets/fullstack.jpg'
 export default function Experience() {
   return (
     <section id="experience" className="py-16 bg-gray-50 dark:bg-gray-900">
@@ -14,14 +14,52 @@ export default function Experience() {
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
-            className="mb-12 pl-8 relative border-l-4 border-primary dark:border-secondary"
+            className="mb-12 pl-8 relative border-l-4 border-[#43cea2],  dark:border-[#185a9d]"
           >
-            <div className="absolute w-4 h-4 bg-primary dark:bg-secondary rounded-full -left-[10px] top-0" />
+            <div className="absolute w-4 h-4 bg-[#43cea2] dark:bg-[#185a9d] rounded-full -left-[10px] top-0" />
+            
+            <div className="flex items-start space-x-4">
+              <div className="w-[150px] h-[40px] relative rounded-full overflow-hidden border-2 border-primary dark:border-secondary">
+                <Image
+                  src={fullstack} // Add company logos
+                  alt="Freelencing"
+                  width={500}
+                  height={500}
+                  
+                  className="object-contain p-2"
+                />
+              </div>
+              
+              <div>
+                <h3 className="text-2xl font-semibold text-gray-900 dark:text-gray-100">
+                  Full Stack Developer
+                </h3>
+                <p className="text-lg text-black dark:text-white/80 mb-2">
+                  Freelencing Remote • Feb 2024 - Present
+                </p>
+                <ul className="list-disc pl-6 space-y-2 text-gray-600 dark:text-gray-300">
+                  <li>Integrated third-party APIs to enhance overall application functionality and improve user experience. Enhanced
+user experience by designing and implementing responsive web applications.</li>
+                  <li>Collaborated with cross-functional teams to deliver high-quality products on time and within budget constraints
+Designed intuitive UI components that aligned with established brand guidelines while meeting users” needs
+effectively.</li>
+                  <li>Used NodeJS, ORM and SQL/No-SQL to develop and manage databases</li>
+                </ul>
+              </div>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            className="mb-12 pl-8 relative border-l-4 border-[#43cea2],  dark:border-[#185a9d]"
+          >
+            <div className="absolute w-4 h-4 bg-[#43cea2] dark:bg-[#185a9d] rounded-full -left-[10px] top-0" />
             
             <div className="flex items-start space-x-4">
               <div className="w-16 h-16 relative rounded-full overflow-hidden border-2 border-primary dark:border-secondary">
                 <Image
-                  src="/croptr-logo.png" // Add company logos
+                  src={fullstack} // Add company logos
                   alt="Croptr"
                   fill
                   className="object-contain p-2"
@@ -32,7 +70,7 @@ export default function Experience() {
                 <h3 className="text-2xl font-semibold text-gray-900 dark:text-gray-100">
                   Backend Developer Intern
                 </h3>
-                <p className="text-lg text-primary dark:text-secondary mb-2">
+                <p className="text-lg text-black dark:text-white/80 mb-2">
                   Croptr Technology • Sept 2023 – Feb 2024
                 </p>
                 <ul className="list-disc pl-6 space-y-2 text-gray-600 dark:text-gray-300">
@@ -45,6 +83,7 @@ export default function Experience() {
           </motion.div>
 
           {/* Add more timeline items similarly */}
+          
         </div>
       </div>
     </section>

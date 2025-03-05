@@ -1,5 +1,4 @@
 "use client";
-
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { useTheme } from "next-themes";
@@ -7,68 +6,44 @@ import { MoonIcon, SunIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
 
 export default function Navbar() {
-  const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
-  const [activeSection, setActiveSection] = useState("home");
+  const [mounted, setMounted] = useState(false);
 
-  useEffect(() => {
-    setMounted(true);
-    const handleScroll = () => {
-      const sections = document.querySelectorAll("section");
-      sections.forEach((section) => {
-        const top = window.scrollY;
-        const offset = section.offsetTop - 150;
-        const height = section.offsetHeight;
-        const id = section.getAttribute("id");
-        if (top >= offset && top < offset + height) {
-          setActiveSection(id || "");
-        }
-      });
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  if (!mounted) return null;
+  useEffect(() => setMounted(true), []);
 
   return (
-    <nav className="fixed w-full top-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-700">
+    <nav 
+      style={{ 
+        background: theme === 'dark' 
+          ? 'linear-gradient(45deg, #141e30, #243b55)'
+          : 'linear-gradient(45deg, #43cea2, #185a9d)'
+      }}
+      className="fixed w-full top-0 z-50 text-white shadow-lg"
+    >
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-        <motion.div
-          initial={{ x: -20, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          className="flex items-center space-x-4"
-        >
-          <Link href="/" className="text-2xl font-bold text-primary dark:text-secondary">
-            Shivam
-          </Link>
-        </motion.div>
+        <Link href="/" className="text-2xl font-bold">
+          Shivam Raj
+        </Link>
 
-        <div className="flex items-center space-x-8">
-          <div className="hidden md:flex space-x-6">
-            {["home", "projects", "experience", "skills","contact"].map((section) => (
-              <Link
-                key={section}
-                href={`#${section}`}
-                className={`px-3 py-2 rounded-md transition-colors ${
-                  activeSection === section
-                    ? "text-primary dark:text-secondary font-semibold"
-                    : "text-gray-600 hover:text-primary dark:text-gray-300 dark:hover:text-secondary"
-                }`}
-              >
-                {section.charAt(0).toUpperCase() + section.slice(1)}
-              </Link>
-            ))}
-          </div>
-
+        <div className="flex items-center gap-6">
+          {['home', 'projects', 'experience'].map((section) => (
+            <Link
+              key={section}
+              href={`#${section}`}
+              className="hover:text-gray-200 transition-colors"
+            >
+              {section.charAt(0).toUpperCase() + section.slice(1)}
+            </Link>
+          ))}
+          
           <button
-            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            className="p-2 rounded-lg bg-primary/10 dark:bg-secondary/10 hover:bg-primary/20 dark:hover:bg-secondary/20 transition-colors"
+            onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+            className="p-2 rounded-full bg-white/10 hover:bg-white/20"
           >
-            {theme === "dark" ? (
-              <SunIcon className="w-6 h-6 text-primary dark:text-secondary" />
+            {theme === 'dark' ? (
+              <SunIcon className="w-6 h-6" />
             ) : (
-              <MoonIcon className="w-6 h-6 text-primary dark:text-secondary" />
+              <MoonIcon className="w-6 h-6" />
             )}
           </button>
         </div>

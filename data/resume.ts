@@ -1,3 +1,5 @@
+import chat from '../public/assets/chat.jpg'
+import kanban from '../public/assets/kanban.jpg'
 export const PROFILE = {
     name: "Shivam Raj",
   summary: "Hardworking and passionate software developer with strong organizational skills eager to secure software developer position. Ready to help team achieve company goals.",
@@ -42,7 +44,8 @@ export const EXPERIENCE = [
         "Authentication with JWT",
         "Apache Kafka for message throughput",
         "Multi-server communication handling"
-      ]
+      ],
+      image:chat
     },
     {
       title: "Kanban Board",
@@ -52,7 +55,8 @@ export const EXPERIENCE = [
         "Progress tracking with status updates",
         "Interactive UI with color coding",
         "Board management features"
-      ]
+      ],
+      image:kanban
     }
   ];
   
