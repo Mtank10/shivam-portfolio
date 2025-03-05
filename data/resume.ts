@@ -45,6 +45,7 @@ export const EXPERIENCE = [
         "Apache Kafka for message throughput",
         "Multi-server communication handling"
       ],
+      githubUrl: "https://github.com/Mtank10",
       image:chat
     },
     {
@@ -56,6 +57,7 @@ export const EXPERIENCE = [
         "Interactive UI with color coding",
         "Board management features"
       ],
+      githubUrl: "https://github.com/Mtank10",
       image:kanban
     }
   ];

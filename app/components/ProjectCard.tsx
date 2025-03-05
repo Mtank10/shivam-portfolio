@@ -3,10 +3,13 @@ import Image from "next/image";
 
 export default function ProjectCard({ project }: { project: any }) {
   return (
-    <motion.div
+    <motion.a
+      href={project.githubUrl}
+      target="_blank"
+      rel="noopener noreferrer"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      className="rounded-xl overflow-hidden shadow-xl"
+      className="rounded-xl overflow-hidden shadow-xl block hover:scale-[1.02] transition-transform"
       style={{
         background: 'linear-gradient(145deg, #43cea280, #185a9d80)',
         color: '#ffffff'
@@ -44,6 +47,6 @@ export default function ProjectCard({ project }: { project: any }) {
           </ul>
         </div>
       </div>
-    </motion.div>
+    </motion.a>
   );
 }

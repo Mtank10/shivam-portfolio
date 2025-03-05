@@ -6,7 +6,7 @@ import ProjectCard from "./components/ProjectCard";
 import { PROFILE, PROJECTS, SKILLS } from "@/data/resume";
 import { motion } from "framer-motion";
 import { CodeBracketIcon, CpuChipIcon, CommandLineIcon, CircleStackIcon } from "@heroicons/react/24/outline";
-
+import Footer from './components/Footer';
 export default function Home() {
   return (
     <div className="min-h-screen">
@@ -71,6 +71,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <Footer/>
     </div>
   );
 }
