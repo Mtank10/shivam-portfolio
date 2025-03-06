@@ -1,5 +1,6 @@
 import chat from '../public/assets/chat.jpg'
 import kanban from '../public/assets/kanban.jpg'
+import care from '../public/assets/care.jpg'
 export const PROFILE = {
     name: "Shivam Raj",
   summary: "Hardworking and passionate software developer with strong organizational skills eager to secure software developer position. Ready to help team achieve company goals.",
@@ -59,6 +60,19 @@ export const EXPERIENCE = [
       ],
       githubUrl: "https://kanban-board-eta-ten.vercel.app/",
       image:kanban
+    },
+    {
+      title:"Care Connect",
+      tech:["React","Javascript","CSS","Node.js","Express.js","MongoDB"],
+      points:[
+        "Implemented JWT token-based authentication for secure access",
+        "Designed and developed the frontend using React",
+        "Developed the backend using Node.js and Express.js",
+        "Admin Panel: Manage users, doctors, and appointments efficiently",
+        "Patients can book, reschedule, or cancel appointments"
+      ],
+      githubUrl:"https://care-connect-rust.vercel.app/",
+      image:care
     }
   ];
   
