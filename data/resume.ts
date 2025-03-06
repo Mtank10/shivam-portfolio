@@ -1,6 +1,7 @@
 import chat from '../public/assets/chat.jpg'
 import kanban from '../public/assets/kanban.jpg'
 import care from '../public/assets/care.jpg'
+import blog from '../public/assets/blog.png'
 export const PROFILE = {
     name: "Shivam Raj",
   summary: "Hardworking and passionate software developer with strong organizational skills eager to secure software developer position. Ready to help team achieve company goals.",
@@ -37,6 +38,19 @@ export const EXPERIENCE = [
   ];
 
   export const PROJECTS = [
+    {
+      title:"Blog Fever",
+      tech:["Next Js","CSS","GitHub","MongoDB"],
+      points:[
+        "Developed a blog website using Next.js",
+        "Implemented user authentication with GitHub OAuth",
+        "Usr can create, edit, and delete posts",
+        "Integrated MongoDB for data storage",
+        "Designed and developed the frontend using React"
+      ],
+      githubUrl:"https://blog-fever.vercel.app/",
+      image:blog
+    },
     {
       title: "Scalable Chat-App",
       tech: ["Node.js", "Next.js", "Redis", "Kafka", "PostgreSQL"],
