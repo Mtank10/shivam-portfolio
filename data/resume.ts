@@ -57,7 +57,7 @@ export const EXPERIENCE = [
         "Interactive UI with color coding",
         "Board management features"
       ],
-      githubUrl: "https://github.com/Mtank10",
+      githubUrl: "https://kanban-board-eta-ten.vercel.app/",
       image:kanban
     }
   ];
