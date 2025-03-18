@@ -49,7 +49,7 @@ export default function Header() {
           </p>
 
           <motion.a
-            href="https://drive.google.com/file/d/1G40D02oyzaX93EI6nkizmMEgGvsz6hql/view?usp=sharing"
+            href="https://drive.google.com/file/d/1_mbvYRKVHkywMm9_FbKOp8U3X5nuqAyu/view?usp=sharing"
             download
             whileHover={{ scale: 1.05 }}
             className="inline-flex items-center bg-white/20 px-8 py-4 rounded-lg backdrop-blur-sm hover:bg-white/30"
