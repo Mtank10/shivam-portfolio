@@ -26,13 +26,16 @@ export const EXPERIENCE = [
       ]
     },
     {
-      company: "Freelancing",
-      role: "Full Stack Developer",
-      duration: "May 2024 – Present",
+      company: "Eduuis Techno Solutions Pvt Ltd",
+      role: "Backend Developer",
+      duration: "May 2024 – Jan 2025",
       points: [
-        "Integrated third-party APIs to enhance application functionality",
-        "Designed and implemented responsive web applications",
-        "Developed and managed databases using NodeJS, ORM and SQL/No-SQL"
+        "Developed secure APIs to allow parents to monitor and manage child activities.",
+        "Implemented role-based access control(RBAC) for parents and chidren with different permissions.",
+        "Implemented JWT authentication for secure login and session.",
+        "Managed structured data using MYSQL and optimized queries for fast retrieval.",
+        "build mechanisums for parents to restrict-access to specific apps,websites or content.",
+        "Designed APIs to track app usage, screen time,and location history of the child."
       ]
     }
   ];
