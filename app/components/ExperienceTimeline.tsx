@@ -32,18 +32,15 @@ export default function Experience() {
               
               <div>
                 <h3 className="text-2xl font-semibold text-gray-900 dark:text-gray-100">
-                  Full Stack Developer
+                  Backend Developer
                 </h3>
                 <p className="text-lg text-black dark:text-white/80 mb-2">
-                  Freelencing Remote • Feb 2024 - Present
+                  Eduuis techno Solutions pvt Ltd • May 2024 - Feb 2025
                 </p>
                 <ul className="list-disc pl-6 space-y-2 text-gray-600 dark:text-gray-300">
-                  <li>Integrated third-party APIs to enhance overall application functionality and improve user experience. Enhanced
-user experience by designing and implementing responsive web applications.</li>
-                  <li>Collaborated with cross-functional teams to deliver high-quality products on time and within budget constraints
-Designed intuitive UI components that aligned with established brand guidelines while meeting users” needs
-effectively.</li>
-                  <li>Used NodeJS, ORM and SQL/No-SQL to develop and manage databases</li>
+                  <li>Developed secure APIs to allow parents to monitor and manage child activities.Implemented role-based access control (RBAC) for parents and children with different permissions.</li>
+                  <li>Implemented JWT authentication for secure login and sessionmanagement.Managed structured data using MySQL and optimized queries for fast retrieval.</li>
+                  <li>Built mechanisms for parents to restrict access to specific apps, websites, or content.Designed APIs to track app usage, screen time, and location history of the child</li>
                 </ul>
               </div>
             </div>
