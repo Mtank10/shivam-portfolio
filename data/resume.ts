@@ -2,6 +2,7 @@ import chat from '../public/assets/chat.jpg'
 import kanban from '../public/assets/kanban.jpg'
 import care from '../public/assets/care.jpg'
 import blog from '../public/assets/blog.png'
+import recipehub from '../public/assets/recipehub.png'
 export const PROFILE = {
     name: "Shivam Raj",
   summary: "Hardworking and passionate software developer with strong organizational skills eager to secure software developer position. Ready to help team achieve company goals.",
@@ -41,6 +42,20 @@ export const EXPERIENCE = [
   ];
 
   export const PROJECTS = [
+    {
+      title:"RecipeHub",
+      tech:["Node","Express","Graphql","React","Tailwind css","Javascript","Prisma Orm","postgres"],
+      points:[
+        "Developed a full-stack recipe application using Node.js, Express, and GraphQL",
+        "Implemented user authentication and authorization using JWT",
+        "Designed and developed the frontend using React and Tailwind CSS",
+        "Integrated Prisma ORM for database management with PostgreSQL",
+        "Implemented features for users to create, edit, and delete recipes",
+        "Deployed the application on Vercel for production"
+      ],
+      githubUrl:"https://recipehub-rosy.vercel.app",
+      image:recipehub
+    },
     {
       title:"Blog Fever",
       tech:["Next Js","CSS","GitHub","MongoDB"],
