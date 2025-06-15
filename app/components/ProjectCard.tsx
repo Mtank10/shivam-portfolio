@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { ExternalLinkIcon, CodeBracketIcon } from "@heroicons/react/24/outline";
+// import { ExternalLinkIcon, CodeBracketIcon } from "@heroicons/react/24/outline";
 
 export default function ProjectCard({ project, index }: { project: any; index: number }) {
   return (
@@ -33,14 +33,14 @@ export default function ProjectCard({ project, index }: { project: any; index: n
               whileTap={{ scale: 0.9 }}
               className="p-3 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-white/30 transition-colors"
             >
-              <ExternalLinkIcon className="w-6 h-6" />
+              {/* <ExternalLinkIcon className="w-6 h-6" /> */}
             </motion.a>
             <motion.button
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               className="p-3 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-white/30 transition-colors"
             >
-              <CodeBracketIcon className="w-6 h-6" />
+              {/* <CodeBracketIcon className="w-6 h-6" /> */}
             </motion.button>
           </div>
         </div>
@@ -105,7 +105,7 @@ export default function ProjectCard({ project, index }: { project: any; index: n
                 animate={{ x: [0, 5, 0] }}
                 transition={{ repeat: Infinity, duration: 1.5 }}
               >
-                <ExternalLinkIcon className="w-4 h-4" />
+                {/* <ExternalLinkIcon className="w-4 h-4" /> */}
               </motion.div>
             </motion.a>
           </div>
