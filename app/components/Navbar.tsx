@@ -40,7 +40,7 @@ export default function Navbar() {
           <Link href="/" className="relative group">
             <motion.div
               whileHover={{ scale: 1.05 }}
-              className="text-2xl font-bold bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent"
+              className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-white-600 bg-clip-text text-transparent"
             >
               Shivam Raj
             </motion.div>
